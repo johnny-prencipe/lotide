@@ -17,7 +17,7 @@ const eqArrays = (firstArr, secondArr) => {
   for (let i in firstArr) {
     if (firstArr[i] !== secondArr[i]) {
       return false;
-    }
+    } 
   }
   //return true after the previous checks pass.
   return true;
