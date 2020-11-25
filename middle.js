@@ -35,4 +35,7 @@ const middle = (needMiddle) => {
   return [];
 }
 
+//tester code
 console.log(middle([1, 2, 3, 4, 5, 6, 7]));
+console.log(eqArrays(middle([1, 2, 3, 4, 5, 6, 7]), [4]));
+console.log(assertArraysEqual(middle([1, 2, 3]), [2]));
