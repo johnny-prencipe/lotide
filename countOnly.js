@@ -7,8 +7,13 @@ const assertEqual = (actual, expected) => {
 };
 
 const countOnly = (allItems, itemsToCount) => {
-  const countedItems = {};
+  const results = {};
 
+  for (const item of allItems) {
+    console.log(item);
+  }
+
+  return results;
 }
 
 const firstNames = [
