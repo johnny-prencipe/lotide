@@ -1,5 +1,5 @@
 const takeUntil = ((array, callback) => {
-  outputArr = [];
+  let outputArr = [];
   for (let i of array) {
     if (callback(i)) {
       break;
