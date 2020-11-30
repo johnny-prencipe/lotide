@@ -21,4 +21,5 @@ const countLetters = (sentence) => {
   console.log(returnObj);
 };
 
+module.exports = countLetters;
 countLetters('The quick brown fox jumps over the lazy dog');
