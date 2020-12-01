@@ -18,3 +18,5 @@ console.log(findKey({
 }, x => x.stars === 2)); // => "noma"
 
 console.log(findKey({a: 'a', b: 'b', c: 'c'}, x => typeof(x) !== 'string')); //should fail
+
+module.exports(findKey);
