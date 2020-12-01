@@ -1,7 +1,7 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "lotide not lodash",
+  "description": "lotide not lodash, for lighthouse labs",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/johnny-prencipe/lotide.git"
   },
-  "author": "",
+  "author": "johnny prencipe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnny-prencipe/lotide/issues"
