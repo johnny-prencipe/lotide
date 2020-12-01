@@ -19,4 +19,4 @@ console.log(results2);
 const results3 = map(odds, num => num * 2);
 console.log(results3);
 
-module.exports(map);
+module.exports = (map);

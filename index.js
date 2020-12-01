@@ -36,3 +36,5 @@ module.exports = {
   takeUntil,
   without
 };
+
+console.log(exports);

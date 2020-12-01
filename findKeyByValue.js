@@ -20,4 +20,4 @@ console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), un
 console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "drama")); // should fail
 console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi")); //pass
 
-module.exports(findKeyByValue)
+module.exports = (findKeyByValue)
