@@ -1,19 +1,24 @@
-//INCOMPLETE
-//INCOMPLETE
-//INCOMPLETE
-
-//need to refactor to mmocha & chai
-
-console.log(eqObjects({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 })); // true
+const eqObjects = require('../eqObjects');
+const assert = require('chai').assert;
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 const abc = { a: "1", b: "2", c: "3" };
-console.log(eqObjects(ab, abc)); // => false
-console.log(eqObjects(ab, ba)); // => true
-
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
-
 const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+
+describe('#eqObjects', () => {
+  it('returns "true" when given { a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }', () => {
+    assert.equal(eqObjects({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }), true);
+  });
+  it('returns "true" when given { a: "1", b: "2" }, { b: "2", a: "1" }', () => {
+    assert.equal(eqObjects(ab, ba), true);
+  });
+  it('returns "false" when given { a: "1", b: "2" }, { a: "1", b: "2", c: "3" }', () => {
+    assert.equal(eqObjects(ab, abc), false);
+  });
+  it('returns "false" when given { c: "1", d: ["2", 3] }, { c: "1", d: ["2", 3, 4] }', () => {
+    assert.equal(eqObjects(cd, cd2), false);
+  });
+  
+});

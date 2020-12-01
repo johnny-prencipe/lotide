@@ -9,8 +9,7 @@ const countLetters = (sentence) => {
       returnObj[i] = 1;
     }
   }
-  console.log(returnObj);
+  return(returnObj);
 };
 
 module.exports = countLetters;
-countLetters('The quick brown fox jumps over the lazy dog');
