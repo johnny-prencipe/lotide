@@ -1,12 +1,3 @@
-//const assertEqual = (actual, expected) => {
-//  if (actual === expected) {
-//    return `✅✅✅ Assertion passed. ${actual} === ${expected}`;
-//  } else if (actual !== expected) {
-//    return `🛑🛑🛑 Assertion failed. ${actual} !== ${expected}`;
-//  }
-//};
-//commeting this out, not sure why i added it
-
 const countLetters = (sentence) => {
   let returnObj = {};
   for (let i of sentence.toLowerCase()) {
